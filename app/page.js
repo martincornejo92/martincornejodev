@@ -282,13 +282,12 @@ export default function Home() {
                 transform: 'translate(10px, 10px)',
               }} />
               <div style={{ position: 'relative', width: '100%', height: '100%', overflow: 'hidden', background: 'var(--surface)' }}>
-                <Image
-                  src="/profile.jpg"
-                  alt="Martin Cornejo"
-                  fill
-                  style={{ objectFit: 'cover', filter: 'grayscale(20%)' }}
-                  priority
-                />
+                // Usa exactamente "/profile.jpg"
+                <Image src="/profile.jpg" 
+                alt="Profile" 
+                width={120} 
+                height={120} 
+                className="rounded-full" />
                 <div style={{
                   position: 'absolute', inset: 0,
                   background: 'linear-gradient(to top, rgba(8,8,8,0.4) 0%, transparent 50%)',
